@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h3> Welcome to News API</h3>
+
+    <button type="submit"> <a href="/signup">SignUp</a></button>
+    <button type="submit"> <a href="/signIn">SignIn</a></button>
+    <button type="submit"> <a href="/signOut">SignOut</a></button>
+</body>
+</html>
+
+<!-- <views class="py">def signup(request):
+    if request.method == 'POST':
+
+        username = request.POST['username']
+        fname = request.POST['fname']
+        lname= request.POST['lname']
+        email = request.POST['email']
+        pass1 = request.POST['pass1']
+        pass2 = request.POST['pass2']
+
+        myuser  =User.objects.create_user(username,email,pass1)
+        myuser.first_name = fname
+        myuser.last_name = lname
+        myuser.save()
+
+        messages.success(request,"Your Account has been succesfully created")
+
+        return redirect('signin.html')
+
+    return render(request,'news/signup.html')
+
+def signin(request):
+
+    if request.method ==  'POST':
+        username = request.POST['username']
+        pass1 = request.POST['pass1']
+
+        user =authenticate(username=username,password=pass1)
+
+        if user is not None:
+            login(request,user)
+            fname= user.first_name
+            return render(request,'authentication/index.html',{'fname':fname })
+        else:
+            messages.error(request,'Bad Credentials!')
+            return redirect('home')
+    return render(request,'news/signin.html')
+
+
+def signout(request):
+   pass</views> -->
